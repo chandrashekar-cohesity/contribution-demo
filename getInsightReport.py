@@ -152,7 +152,7 @@ def get_filepaths(cluster_endpoint, search, pattern):
     files_list.append(file_name)
 
     # Send email. There can be multiple recipient.
-    send_mail("chandu@cohesity.com", ["cdashudu@gmail.com"], "Insight Search Result Report", "Test", server="smtp.gmail.com", port=587, username="mailrelay@cohesity.com", password="c0nquer15", files=files_list)  
+    send_mail("chandu@cohesity.com", ["cdashudu@gmail.com"], "Insight Search Result Report", "Test", server="smtp.com", port=587, username="", password="", files=files_list)  
 
 
 # Function to send email
@@ -253,9 +253,9 @@ app_session = requests.Session()
 # org = raw_input("Enter your cluster org name(LOCAL) : ") or "LOCAL"
 
 # Cluster details. Comment below 4 lines if above 4 lines are not commented.
-cluster_endpoint = "10.15.2.20"
+cluster_endpoint = "10.x.x.x"
 username = "admin"
-password = "Cohe$1ty"
+password = "admin"
 org = "LOCAL"
 
 # Public API Call URL
