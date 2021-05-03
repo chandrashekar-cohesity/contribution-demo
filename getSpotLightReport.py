@@ -158,7 +158,7 @@ def download_report(cluster_endpoint, duration):
         files_list.append(default_report_name)
 
     # Send email. There can be multiple recipient.
-    send_mail("chandu@cohesity.com", ["cdashudu@gmail.com"], "Spotlight Report", "Test", server="smtp.gmail.com", port=587, username="mailrelay@cohesity.com", password="c0nquer15", files=files_list)  
+    send_mail("chandu@cohesity.com", ["cdashudu@gmail.com"], "Spotlight Report", "Test", server="smtp.com", port=123, username="", password="", files=files_list)  
 
 # Internal Function to convert saved filter params to filter that the API can understand. 
 def clean_filter(filter):
@@ -271,9 +271,9 @@ app_session = requests.Session()
 # org = raw_input("Enter your cluster org name(LOCAL) : ") or "LOCAL"
 
 # Cluster details. Comment below 4 lines if above 4 lines are not commented.
-cluster_endpoint = "10.2.158.65"
+cluster_endpoint = "10.x.x.x"
 username = "admin"
-password = "Cohe$1ty"
+password = ""
 org = "LOCAL"
 
 # Public API Call URL
