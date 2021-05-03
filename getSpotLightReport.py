@@ -273,7 +273,7 @@ app_session = requests.Session()
 # Cluster details. Comment below 4 lines if above 4 lines are not commented.
 cluster_endpoint = "10.x.x.x"
 username = "admin"
-password = "admin"
+password = "admin-admin"
 org = "LOCAL"
 
 # Public API Call URL
